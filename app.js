@@ -10,7 +10,7 @@ if (responseOne){
 //this is a comment in JS.
 var quizResponseOne = prompt('Please answer with Y or N. Does Anna have a dog?');
 
-if (quizResponseOne.toUpperCase() === 'Y'){
+if (quizResponseOne.toUpperCase() === 'Y' || quizResponseOne.toUpperCase() === 'YES'){
   console.log('Awesome! You are correct!');
 } else {
   console.log('Too bad, you were wrong. Anna has a dog.');
@@ -18,7 +18,7 @@ if (quizResponseOne.toUpperCase() === 'Y'){
 
 var quizResponseTwo = prompt('Please answer with Y or N. Is Anna from Seattle?');
 
-if (quizResponseTwo.toLowerCase() === 'N'){
+if (quizResponseTwo.toUpperCase() === 'N' || quizResponseTwo.toUpperCase() === 'NO'){
   console.log('Awesome! You are correct!');
 } else {
   console.log('Too bad, you were wrong. Anna is from Louisiana.');
@@ -26,7 +26,7 @@ if (quizResponseTwo.toLowerCase() === 'N'){
 
 var quizResponseThree = prompt('Please answer with Y or N. Does Anna like owls?');
 
-if(quizResponseThree.toUpperCase() === 'Y'){
+if(quizResponseThree.toUpperCase() === 'Y' || quizResponseThree.toUpperCase() === 'YES'){
   console.log('Awesome! You are correct!');
 } else {
   console.log('Too bad. You were wrong.');
@@ -34,7 +34,7 @@ if(quizResponseThree.toUpperCase() === 'Y'){
 
 var quizResponseFour = prompt('Please answer with Y or N. Does Anna like to read?');
 
-if(quizResponseFour.toLowerCase() === 'Y'){
+if(quizResponseFour.toUpperCase() === 'Y' || quizResponseFour.toUpperCase() === 'YES'){
   console.log('Awesome! You are correct!');
 } else {
   console.log('Too bad. You were wrong.');
@@ -42,7 +42,7 @@ if(quizResponseFour.toLowerCase() === 'Y'){
 
 var quizResponseFive = prompt('Please answer with Y or N. Does Anna like the cold weather here in Seattle?');
 
-if(quizResponseFive.toUpperCase() === 'N'){
+if(quizResponseFive.toUpperCase() === 'N' || quizResponseFive.toUpperCase() === 'NO'){
   console.log('Awesome! You are correct!');
 } else {
   console.log('Too bad. You were wrong. Anna dislikes the cold weather very much!');
