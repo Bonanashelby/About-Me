@@ -5,7 +5,7 @@ var responseOne = confirm('Hello, would you like to take a quiz?');
 if (responseOne){
   console.log('Awesome! Lets get started!');
 } else {
-  console.console.log('Too Bad, starting anyway!');
+  console.log('Too Bad, starting anyway!');
 }
 //this is a comment in JS.
 var quizResponseOne = prompt('Please answer with Y or N. Does Anna have a dog?');
@@ -46,4 +46,18 @@ if(quizResponseFive.toUpperCase() === 'N' || quizResponseFive.toUpperCase() === 
   console.log('Awesome! You are correct!');
 } else {
   console.log('Too bad. You were wrong. Anna dislikes the cold weather very much!');
+}
+
+var quizResponseSix = prompt('How many dogs do I have? You have four guesses to get it right!');
+
+if(quizResponseSix = 2) {
+  congratulate('Yay! You got it right!');
+} else {
+  encourage('Bummer! Try Again.');
+}
+
+var rounds = 4;
+
+for (var i = 0; i < (rounds); i++) {
+  array[i];
 }
