@@ -1,9 +1,9 @@
 body {
-background-color: green;
+background-color: #c5cae9;
 }
 
 h1 {
-  background-color: pink;
+  background-color: #ff5177;
   border: 5px solid white;
   font-family: serif;
   font-size: 45px;
@@ -21,7 +21,7 @@ font-weight: bold;
 
 
 h2 {
-  background-color: pink;
+  background-color: #a8cce8;
   border: 5px solid white;
   font-family: serif;
   font-size: 45px;
@@ -34,7 +34,7 @@ ul.b{
 }
 
 h3{
-  background-color: pink;
+  background-color: #d1b2ea;
   border: 5px solid white;
   font-family: serif;
   font-size: 45px;
@@ -47,7 +47,7 @@ ul.c{
 }
 
 h4{
-  background-color: pink;
+  background-color: #ffbdea;
   border: 5px solid white;
   font-family: serif;
   font-size: 45px;
@@ -56,7 +56,7 @@ h4{
 }
 
 h5{
-  background-color: pink;
+  background-color: #a4e7df;
   border: 5px solid white;
   font-family: serif;
   font-size: 45px;
@@ -67,3 +67,5 @@ h5{
 ol{
   font-weight: bold;
 }
+
+/* color scheme: #ff5177, #817091, #817091,
