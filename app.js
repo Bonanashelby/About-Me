@@ -1,5 +1,6 @@
 'use strict';
 
+var score = 0;
 var responseOne = confirm('Hello, would you like to take a quiz?');
 
 if (responseOne){
@@ -13,6 +14,7 @@ function questionOne(){
   var quizResponseOne = prompt('Please answer with Y or N. Does Anna have a dog?');
   if (quizResponseOne.toUpperCase() === 'Y' || quizResponseOne.toUpperCase() === 'YES'){
     console.log('Awesome! You are correct!');
+    score += 1;
   } else {
     console.log('Too bad, you were wrong. Anna has a dog.');
   }
@@ -23,6 +25,7 @@ function questionTwo() {
 
   if (quizResponseTwo.toUpperCase() === 'N' || quizResponseTwo.toUpperCase() === 'NO'){
     console.log('Awesome! You are correct!');
+    score += 1;
   } else {
     console.log('Too bad, you were wrong. Anna is from Louisiana.');
   }
@@ -33,6 +36,7 @@ function questionThree() {
 
   if(quizResponseThree.toUpperCase() === 'Y' || quizResponseThree.toUpperCase() === 'YES'){
     console.log('Awesome! You are correct!');
+    score += 1;
   } else {
     console.log('Too bad. You were wrong.');
   }
@@ -43,6 +47,7 @@ function questionFour() {
 
   if(quizResponseFour.toUpperCase() === 'Y' || quizResponseFour.toUpperCase() === 'YES'){
     console.log('Awesome! You are correct!');
+    score += 1;
   } else {
     console.log('Too bad. You were wrong.');
   }
@@ -53,6 +58,7 @@ function questionFive() {
 
   if(quizResponseFive.toUpperCase() === 'N' || quizResponseFive.toUpperCase() === 'NO'){
     console.log('Awesome! You are correct!');
+    score += 1;
   } else {
     console.log('Too bad. You were wrong. Anna dislikes the cold weather very much!');
   }
@@ -63,12 +69,14 @@ function questionSix() {
     var quizResponseSix = prompt('How many dogs do I have? You have four guesses to get it right!');
     if(quizResponseSix == 2) {
       alert('Yay! You got it right!');
+      score += 1;
       break;
     } else {
       alert('Bummer! Try Again.');
     }
   }
 }
+
 function questionSeven() {
   var answers = ['green', 'purple', 'blue', 'mint green'];
   for (var i = 0; i < 6; i++) {
@@ -77,6 +85,7 @@ function questionSeven() {
     for (var j = 0; j < answers.length; j++) {
       if(userChoice.toLowerCase() == answers[j]) {
         isCorrect = true;
+        score += 1;
         break;
       }
     }
@@ -88,6 +97,11 @@ function questionSeven() {
     }
   }
 }
+
+function finalScore() {
+  alert('You got ' + score + ' out of 7.');
+}
+
 questionOne();
 questionTwo();
 questionThree();
@@ -95,3 +109,4 @@ questionFour();
 questionFive();
 questionSix();
 questionSeven();
+finalScore();
