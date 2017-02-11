@@ -1,4 +1,4 @@
-'user strict';
+'use strict';
 
 var responseOne = confirm('Hello, would you like to take a quiz?');
 
@@ -8,56 +8,90 @@ if (responseOne){
   console.log('Too Bad, starting anyway!');
 }
 //this is a comment in JS.
-var quizResponseOne = prompt('Please answer with Y or N. Does Anna have a dog?');
 
-if (quizResponseOne.toUpperCase() === 'Y' || quizResponseOne.toUpperCase() === 'YES'){
-  console.log('Awesome! You are correct!');
-} else {
-  console.log('Too bad, you were wrong. Anna has a dog.');
+function questionOne(){
+  var quizResponseOne = prompt('Please answer with Y or N. Does Anna have a dog?');
+  if (quizResponseOne.toUpperCase() === 'Y' || quizResponseOne.toUpperCase() === 'YES'){
+    console.log('Awesome! You are correct!');
+  } else {
+    console.log('Too bad, you were wrong. Anna has a dog.');
+  }
 }
 
-var quizResponseTwo = prompt('Please answer with Y or N. Is Anna from Seattle?');
+function questionTwo() {
+  var quizResponseTwo = prompt('Please answer with Y or N. Is Anna from Seattle?');
 
-if (quizResponseTwo.toUpperCase() === 'N' || quizResponseTwo.toUpperCase() === 'NO'){
-  console.log('Awesome! You are correct!');
-} else {
-  console.log('Too bad, you were wrong. Anna is from Louisiana.');
+  if (quizResponseTwo.toUpperCase() === 'N' || quizResponseTwo.toUpperCase() === 'NO'){
+    console.log('Awesome! You are correct!');
+  } else {
+    console.log('Too bad, you were wrong. Anna is from Louisiana.');
+  }
 }
 
-var quizResponseThree = prompt('Please answer with Y or N. Does Anna like owls?');
+function questionThree() {
+  var quizResponseThree = prompt('Please answer with Y or N. Does Anna like owls?');
 
-if(quizResponseThree.toUpperCase() === 'Y' || quizResponseThree.toUpperCase() === 'YES'){
-  console.log('Awesome! You are correct!');
-} else {
-  console.log('Too bad. You were wrong.');
+  if(quizResponseThree.toUpperCase() === 'Y' || quizResponseThree.toUpperCase() === 'YES'){
+    console.log('Awesome! You are correct!');
+  } else {
+    console.log('Too bad. You were wrong.');
+  }
 }
 
-var quizResponseFour = prompt('Please answer with Y or N. Does Anna like to read?');
+function questionFour() {
+  var quizResponseFour = prompt('Please answer with Y or N. Does Anna like to read?');
 
-if(quizResponseFour.toUpperCase() === 'Y' || quizResponseFour.toUpperCase() === 'YES'){
-  console.log('Awesome! You are correct!');
-} else {
-  console.log('Too bad. You were wrong.');
+  if(quizResponseFour.toUpperCase() === 'Y' || quizResponseFour.toUpperCase() === 'YES'){
+    console.log('Awesome! You are correct!');
+  } else {
+    console.log('Too bad. You were wrong.');
+  }
 }
 
-var quizResponseFive = prompt('Please answer with Y or N. Does Anna like the cold weather here in Seattle?');
+function questionFive() {
+  var quizResponseFive = prompt('Please answer with Y or N. Does Anna like the cold weather here in Seattle?');
 
-if(quizResponseFive.toUpperCase() === 'N' || quizResponseFive.toUpperCase() === 'NO'){
-  console.log('Awesome! You are correct!');
-} else {
-  console.log('Too bad. You were wrong. Anna dislikes the cold weather very much!');
+  if(quizResponseFive.toUpperCase() === 'N' || quizResponseFive.toUpperCase() === 'NO'){
+    console.log('Awesome! You are correct!');
+  } else {
+    console.log('Too bad. You were wrong. Anna dislikes the cold weather very much!');
+  }
 }
 
-var quizResponseSix = prompt('How many dogs do I have? You have four guesses to get it right!');
-
-if(quizResponseSix = 2) {
-  congratulate('Yay! You got it right!');
-} else {
-  encourage('Bummer! Try Again.');
+function questionSix() {
+  for (var i = 0; i < 4 ; i++) {
+    var quizResponseSix = prompt('How many dogs do I have? You have four guesses to get it right!');
+    if(quizResponseSix == 2) {
+      alert('Yay! You got it right!');
+      break;
+    } else {
+      alert('Bummer! Try Again.');
+    }
+  }
 }
-
-var rounds = 4;
-
-for (var i = 0; i < (rounds); i++) {
-  array[i];
+function questionSeven() {
+  var answers = ['green', 'purple', 'blue', 'mint green'];
+  for (var i = 0; i < 6; i++) {
+    var isCorrect = false;
+    var userChoice = prompt('Name one color that I like');
+    for (var j = 0; j < answers.length; j++) {
+      if(userChoice.toLowerCase() == answers[j]) {
+        isCorrect = true;
+        break;
+      }
+    }
+    if(isCorrect == true){
+      alert('You got it right!');
+      break;
+    } else {
+      alert('Wrong! Try again!');
+    }
+  }
 }
+questionOne();
+questionTwo();
+questionThree();
+questionFour();
+questionFive();
+questionSix();
+questionSeven();
