@@ -1,4 +1,5 @@
 'use strict';
+
 //score information
 var score = 0;
 //getting user information

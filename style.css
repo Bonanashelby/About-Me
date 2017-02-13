@@ -1,71 +1,64 @@
 body {
-background-color: #c5cae9;
+	height: 100%;
+	margin: 0;
+	text-align: center;
+	width: 100%;
 }
 
 h1 {
-  background-color: #ff5177;
-  border: 5px solid white;
-  font-family: serif;
-  font-size: 45px;
-  font-weight: bold;
-  text-align: center;
+  font-family: Palatino, 'Palatino Linotype', serif;
+  color: #51468c;
+	font-size: 32px;
 }
-
-p{
-  font-weight: bold;
-}
-
-ul.a{
-font-weight: bold;
-}
-
 
 h2 {
-  background-color: #a8cce8;
-  border: 5px solid white;
-  font-family: serif;
-  font-size: 45px;
-  font-weight: bold;
-  text-align: center;
+	font-size: 56px;
 }
 
-ul.b{
-  font-weight: bold;
+
+.about, .xp, .top{
+  color: #ffffff;
+  background-image:   url("http://orig02.deviantart.net/653d/f/2015/155/7/0/shahils_texture_2_by_shahils-d8vz8cb.jpg");
+  background-size: cover;
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  padding: 250px 0;
+  margin: 30px;
 }
 
-h3{
-  background-color: #d1b2ea;
-  border: 5px solid white;
-  font-family: serif;
-  font-size: 45px;
-  font-weight: bold;
-  text-align: center;
+.img-circle{
+  background-size: 150px;
+  border-radius: 50%;
 }
 
-ul.c{
-  font-weight: bold;
+.ed, .goals{
+ color: #ffffff;
+  background-image:   url("http://orig03.deviantart.net/960e/f/2008/278/d/9/texture_101_by_wanderingsoul_stox.jpg");
+  background-size: cover;
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  padding: 250px 0;
+  margin: 30px;
 }
 
-h4{
-  background-color: #ffbdea;
-  border: 5px solid white;
-  font-family: serif;
-  font-size: 45px;
-  font-weight: bold;
-  text-align: center;
+ul {
+  font-size: 2rem;
+  list-style-type: none;
 }
 
-h5{
-  background-color: #a4e7df;
-  border: 5px solid white;
-  font-family: serif;
-  font-size: 45px;
-  font-weight: bold;
-  text-align: center;
+ol {
+  list-style: decimal inside none;
+  font-size: 2rem;
 }
 
-ol{
-  font-weight: bold;
+p {
+font-size: 2rem;
 }
+
+
+#footer {
+font-size: 0.75rem;
+}
+
 
 /* color scheme: #ff5177, #817091, #817091,
+background-image: url("http://orig02.deviantart.net/653d/f/2015/155/7/0/shahils_texture_2_by_shahils-d8vz8cb.jpg");
+} */
